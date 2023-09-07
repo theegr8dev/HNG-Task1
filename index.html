@@ -5,12 +5,40 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>HNG | Stage 1</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<script src="script.js" defer></script>
 </head>
 
 <body>
+	<main>
+		<section class="profile">
+			<div class="profile__img">
+				<img src="profile-pic.png" alt="Khalid Alabi" data-testid="slackDisplayImage">
+			</div>
+			<p class="profile__name" data-testid="slackUserName"><span>Slack Name:</span> Khalid Alabi</p>
 
+			<p class="current-day" data-testid="currentDayOfTheWeek">
+				<span>Current Day of the week:</span>
+			</p>
+
+			<p class="utc" data-testid="currentUTCTime">
+				<span>Current UTC:</span>
+			</p>
+
+
+			<p class="track" data-testid="myTrack">
+				<span>Track:</span>
+				Frontend
+			</p>
+
+			<a href="https://github.com/theegr8dev/HNG-Task1" data-testid="githubURL"> Github Link</a>
+
+
+		</section>
+	</main>
 </body>
 
 </html>

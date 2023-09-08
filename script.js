@@ -3,7 +3,6 @@ const utcEl = document.querySelector('.utc');
 const currentDate = new Date();
 
 const currentDayOfWeek = currentDate.getDay();
-const currentDayName = daysOfWeek[currentDayOfWeek];
 const currentUTCTime = currentDate.toUTCString();
 
 const daysOfWeek = [
@@ -16,5 +15,6 @@ const daysOfWeek = [
 	'Saturday',
 ];
 
+const currentDayName = daysOfWeek[currentDayOfWeek];
 currentDayEl.innerHTML += currentDayName;
 utcEl.innerHTML += currentUTCTime.slice(0, -4);
